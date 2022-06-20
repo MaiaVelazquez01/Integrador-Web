@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DOC Café, café de especialidad | Cafetería en Villa Crespo</title>
+    <link rel="icon" href="assets/favicon.ico" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <h1 class="menu__logo">DOC</h1>
+          <label for="menu_toggle">
+            <div class="menu_toggle__buttom">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </label>
+          <input type="checkbox" id="menu_toggle" class="menu_toggle" />
+          <ul class="menu__links">
+            <li class="menu__link"><a href="#nosotros">Sobre Nosotros</a></li>
+            <li class="menu__link">
+              <a href="#productos">Nuestros Productos</a>
+            </li>
+            <li class="menu__link"><a href="#purchase">Cómo comprar</a></li>
+            <li class="menu__link"><a href="#contacto">Contacto</a></li>
+            <li class="menu__links__usuario">
+              <img src="assets/usuario.jpg" class="menu__link__usuario__img" />
+              <a
+                href="crear_cuenta.html"
+                class="menu__link__usuario"
+                target="_blanck"
+                >Crear cuenta</a
+              >
+              <a
+                href="iniciar_sesion.html"
+                class="menu__link__usuario"
+                target="_blanck"
+                >Iniciar sesión</a
+              >
+            </li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Sección 1 Hero -->
+      <section class="hero">
+        <div class="hero__box">
+          <div class="hero__box__text">
+            <h3>DESDE 1933</h3>
+            <h2>Tostamos nuestro propio café</h2>
+            <p>
+              Lo cuidamos desde la selección de sus granos, hasta la taza,
+              conservando el amor y el respeto que tenemos por lo que hacemos,
+              desde el primer día.
+            </p>
+          </div>
+          <div class="hero__box__down">
+            <a href="#nosotros"><img src="assets/flecha_down.png" /></a>
+          </div>
+        </div>
+        <div class="hero__video">
+          <video
+            src="assets/video_hero.mp4"
+            autoplay
+            loop
+            muted
+            plays-inline
+          ></video>
+        </div>
+      </section>
+      <!-- Sección 1 Terminada -->
+      <!-- Sección 2 Nosotros -->
+      <section class="nosotros" id="nosotros">
+        <div class="nosotros__text">
+          <h3>SOBRE NOSOTROS</h3>
+          <h2>Nuestro café es único</h2>
+          <p>
+            A través de nuestro proceso exclusivo de tostación, logramos
+            resaltar las notas y características propias de los diferentes
+            granos. Un aroma pleno, con notas de chocolate, pan tostado, miel y
+            caramelo y un sabor con cuerpo, con un toque de frescura, es lo que
+            hace inconfundible a un Café DOC, siempre.
+          </p>
+        </div>
+        <img src="assets/nosotros.png" class="nosotros__img" />
+      </section>
+      <!-- Sección 2 Terminada -->
+      <!-- Sección 3 Productos -->
+      <section class="productos" id="productos">
+        <div class="productos__text">
+          <h3>NUESTROS PRODUCTOS</h3>
+          <h2>Café</h2>
+        </div>
+        <div class="productos__cards">
+          <div class="productos__card">
+            <img src="assets/espresso.jpg" class="productos__card__img" />
+            <div class="productos__card__text">
+              <p>Espresso</p>
+              <h4>$230</h4>
+            </div>
+          </div>
+          <div class="productos__card">
+            <img src="assets/matcha_latte.jpg" class="productos__card__img" />
+            <div class="productos__card__text">
+              <p>Matcha Latte</p>
+              <h4>$550</h4>
+            </div>
+          </div>
+          <div class="productos__card">
+            <img src="assets/iced_black.jpg" class="productos__card__img" />
+            <div class="productos__card__text">
+              <p>Iced Black</p>
+              <h4>$320</h4>
+            </div>
+          </div>
+          <div class="productos__card">
+            <img src="assets/moca.jpg" class="productos__card__img" />
+            <div class="productos__card__text">
+              <p>Moca</p>
+              <h4>$420</h4>
+            </div>
+          </div>
+        </div>
+        <div class="productos__button">
+          <a href="assets/menu.pdf" download="Menú DOC Café.pdf"
+            ><input type="button" id="menu" value="Ver más"
+          /></a>
+        </div>
+        <div class="productos__text">
+          <h2>Desayuno y Brunch</h2>
+        </div>
+        <div class="productos__cards">
+          <div class="productos__card">
+            <img src="assets/toston.png" class="productos__card__img" />
+            <div class="productos__card__text">
+              <p>Tostón de palta, huevos y tomates cherrys</p>
+              <h4>$590</h4>
+            </div>
+          </div>
+          <div class="productos__card">
+            <img src="assets/chia_pudding.jpg" class="productos__card__img" />
+            <div class="productos__card__text">
+              <p>Chía Pudding</p>
+              <h4>$490</h4>
+            </div>
+          </div>
+          <div class="productos__card">
+            <img src="assets/jyq.jpg" class="productos__card__img" />
+            <div class="productos__card__text">
+              <p>Tostdado de JYQ</p>
+              <h4>$500</h4>
+            </div>
+          </div>
+          <div class="productos__card">
+            <img
+              src="assets/panqueque_banana.jpg"
+              class="productos__card__img"
+            />
+            <div class="productos__card__text">
+              <p>Panqueque de banana</p>
+              <h4>$540</h4>
+            </div>
+          </div>
+        </div>
+        <div class="productos__button">
+          <a href="assets/menu.pdf" download="Menú DOC Café.pdf"
+            ><input type="button" id="menu" value="Ver más"
+          /></a>
+        </div>
+      </section>
+      <!-- Sección 3 Terminada -->
+      <!-- Sección 4 Purchase -->
+      <section class="purchase" id="purchase">
+        <a
+          href="https://www.rappi.com.ar/restaurantes/125200-doc-cafe-"
+          target="_blank"
+          ><div class="purchase__box-rappi">
+            <p>PARA DELIVERY</p>
+            <img src="assets/icono_rappi.png" class="purchase__box__img" /></div
+        ></a>
+        <a
+          href="https://api.whatsapp.com/send/?phone=5491161965270&text&app_absent=0"
+          target="_blank"
+          ><div class="purchase__box-wapp">
+            <p>PARA PEDIR Y PASAR A BUSCAR</p>
+            <img
+              src="assets/icono_whatsapp2.png"
+              class="purchase__box__img"
+            /></div
+        ></a>
+      </section>
+      <!-- Sección 4 Terminada -->
+      <!-- Sección 5 Newsletter -->
+      <section class="newsletter">
+        <h2>Recibí todas las ofertas</h2>
+        <p>
+          ¿Querés saber cuándo entra un nuevo grano de café, qué pop ups hay en
+          la vereda, cuáles son los nuevos platos en la carta?
+        </p>
+        <form class="newsletter__form">
+          <input
+            type="email"
+            placeholder="Correo Electrónico"
+            id="newsletter__email"
+            required
+          />
+          <input type="submit" value="ENVIAR" id="newsletter__button" />
+        </form>
+      </section>
+      <!-- Sección 5 Terminada -->
+      <!-- Sección 6 Contacto -->
+      <section class="contacto" id="contacto">
+        <div class="contacto__text">
+          <h3>CONTACTO</h3>
+          <h2>DOC Café</h2>
+          <div class="contacto__items">
+            <a
+              class="contacto__item"
+              href="https://api.whatsapp.com/send/?phone=5491161965270&text&app_absent=0"
+              target="_blank"
+            >
+              <img
+                src="assets/icono_whatsapp.png"
+                class="contacto__item__img"
+              />
+              <p>54 9 1161965270</p>
+            </a>
+            <a class="contacto__item" href="tel:5491161965270">
+              <img src="assets/icono_tel.jpg" class="contacto__item__img" />
+              <p>11 6196 5270</p>
+            </a>
+            <a
+              class="contacto__item"
+              href="https://www.google.com/maps/place/DOC+Caf%C3%A9+de+Especialidad/@-34.5982603,-58.4343229,15z/data=!4m2!3m1!1s0x0:0x9ba539a2152b0a63?sa=X&ved=2ahUKEwjwjanF_bX4AhVduZUCHYJYAlsQ_BJ6BAhdEAU"
+              target="blank"
+            >
+              <img src="assets/icono_mapa.png" class="contacto__item__img" />
+              <p>Aráoz 645</p>
+            </a>
+            <a class="contacto__item" href="mailto:cafeina@doccafe.com.ar">
+              <img src="assets/icono_mail.png" class="contacto__item__img" />
+              <p>cafeina@doccafe.com.ar</p>
+            </a>
+          </div>
+        </div>
+        <img src="assets/contacto.png" class="contacto__img" />
+      </section>
+      <!-- Sección 6 Terminada -->
+    </main>
+    <footer>
+      <h2>DOC</h2>
+      <div class="footer__menu">
+        <h3>MENÚ</h3>
+        <p><a href="#nosotros">Sobre nosotros</a></p>
+        <a href="#productos"><p>Nuestros Productos</p></a>
+        <a href="#purchase"><p>Cómo comprar</p></a>
+        <a href="#contacto"><p>Contacto</p></a>
+      </div>
+      <a href="crear_cuenta.html"></a>
+      <h3>CREAR CUENTA</h3>
+      <a href="inicar_sesion.html"></a>
+      <h3>INICIAR SESIÓN</h3>
+      <div class="footer__social">
+        <h3>SOCIAL</h3>
+        <div class="footer__social__items">
+          <a
+            href="https://www.instagram.com/doc.cafe/"
+            target="blank"
+            class="footer__social__item"
+            ><img
+              src="assets/icono_insta.png"
+              class="footer__social__item__img"
+          /></a>
+          <a
+            href="https://twitter.com/DOCcafeBA"
+            target="blank"
+            class="footer__social__item"
+            ><img
+              src="assets/icono_twitter.png"
+              class="footer__social__item__img"
+          /></a>
+          <a
+            href="https://www.facebook.com/DOC.cafedeespecialidad/"
+            target="blank"
+            class="footer__social__item"
+            ><img src="assets/icono_face.jpg" class="footer__social__item__img"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
