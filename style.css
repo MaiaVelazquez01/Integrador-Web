@@ -109,7 +109,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -169,7 +169,7 @@ header {
     overflow: hidden;
   }
 
-  .hero__video video {
+  .hero__video img {
     position: relative;
     top: 50%;
     left: 50%;
