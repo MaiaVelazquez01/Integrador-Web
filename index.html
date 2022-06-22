@@ -13,7 +13,7 @@
     <header>
       <nav>
         <ul class="menu">
-          <h1 class="menu__logo">DOC</h1>
+          <a href="#"><h1 class="menu__logo">DOC</h1></a>
           <label for="menu_toggle">
             <div class="menu_toggle__buttom">
               <span></span>
@@ -27,20 +27,17 @@
             <li class="menu__link">
               <a href="#productos">Nuestros Productos</a>
             </li>
-            <li class="menu__link"><a href="#purchase">Cómo comprar</a></li>
+            <li class="menu__link"><a href="#purchase">Comprar</a></li>
             <li class="menu__link"><a href="#contacto">Contacto</a></li>
             <li class="menu__links__usuario">
               <img src="assets/usuario.jpg" class="menu__link__usuario__img" />
               <a
-                href="crear_cuenta.html"
+                href="register.html"
                 class="menu__link__usuario"
                 target="_blanck"
                 >Crear cuenta</a
               >
-              <a
-                href="iniciar_sesion.html"
-                class="menu__link__usuario"
-                target="_blanck"
+              <a href="login.html" class="menu__link__usuario" target="_blanck"
                 >Iniciar sesión</a
               >
             </li>
@@ -73,7 +70,7 @@
             loop
             plays-inline
           ></video> -->
-          <img src="assets/video_hero.gif">
+          <img src="assets/video_hero.gif" />
         </div>
       </section>
       <!-- Sección 1 Terminada -->
@@ -178,42 +175,47 @@
       </section>
       <!-- Sección 3 Terminada -->
       <!-- Sección 4 Purchase -->
-      <section class="purchase" id="purchase">
-        <a
-          href="https://www.rappi.com.ar/restaurantes/125200-doc-cafe-"
-          target="_blank"
-          ><div class="purchase__box-rappi">
-            <p>PARA DELIVERY</p>
-            <img src="assets/icono_rappi.png" class="purchase__box__img" /></div
-        ></a>
-        <a
-          href="https://api.whatsapp.com/send/?phone=5491161965270&text&app_absent=0"
-          target="_blank"
-          ><div class="purchase__box-wapp">
-            <p>PARA PEDIR Y PASAR A BUSCAR</p>
-            <img
-              src="assets/icono_whatsapp2.png"
-              class="purchase__box__img"
-            /></div
-        ></a>
-      </section>
-      <!-- Sección 4 Terminada -->
-      <!-- Sección 5 Newsletter -->
-      <section class="newsletter">
-        <h2>Recibí todas las ofertas</h2>
-        <p>
-          ¿Querés saber cuándo entra un nuevo grano de café, qué pop ups hay en
-          la vereda, cuáles son los nuevos platos en la carta?
-        </p>
-        <form class="newsletter__form">
-          <input
-            type="email"
-            placeholder="Correo Electrónico"
-            id="newsletter__email"
-            required
-          />
-          <input type="submit" value="ENVIAR" id="newsletter__button" />
-        </form>
+      <section id="purchase-newsletter">
+        <section class="purchase" id="purchase">
+          <a
+            href="https://www.rappi.com.ar/restaurantes/125200-doc-cafe-"
+            target="_blank"
+            ><div class="purchase__box-rappi">
+              <p>PARA DELIVERY</p>
+              <img
+                src="assets/icono_rappi.png"
+                class="purchase__box__img"
+              /></div
+          ></a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5491161965270&text&app_absent=0"
+            target="_blank"
+            ><div class="purchase__box-wapp">
+              <p>PARA PEDIR Y PASAR A BUSCAR</p>
+              <img
+                src="assets/icono_whatsapp2.png"
+                class="purchase__box__img"
+              /></div
+          ></a>
+        </section>
+        <!-- Sección 4 Terminada -->
+        <!-- Sección 5 Newsletter -->
+        <section class="newsletter">
+          <h2>Recibí todas las ofertas</h2>
+          <p>
+            ¿Querés saber cuándo entra un nuevo grano de café, qué pop ups hay
+            en la vereda, cuáles son los nuevos platos en la carta?
+          </p>
+          <form class="newsletter__form">
+            <input
+              type="email"
+              placeholder="Correo Electrónico"
+              id="newsletter__email"
+              required
+            />
+            <input type="submit" value="ENVIAR" id="newsletter__button" />
+          </form>
+        </section>
       </section>
       <!-- Sección 5 Terminada -->
       <!-- Sección 6 Contacto -->
@@ -259,15 +261,15 @@
       <h2>DOC</h2>
       <div class="footer__menu">
         <h3>MENÚ</h3>
-        <p><a href="#nosotros">Sobre nosotros</a></p>
+        <a href="#nosotros"><p>Sobre nosotros</p></a>
         <a href="#productos"><p>Nuestros Productos</p></a>
-        <a href="#purchase"><p>Cómo comprar</p></a>
+        <a href="#purchase"><p>Comprar</p></a>
         <a href="#contacto"><p>Contacto</p></a>
       </div>
-      <a href="crear_cuenta.html"></a>
-      <h3>CREAR CUENTA</h3>
-      <a href="inicar_sesion.html"></a>
-      <h3>INICIAR SESIÓN</h3>
+      <div class="footer_usuario">
+        <h3><a href="register.html">CREAR CUENTA</a></h3>
+        <h3><a href="login.html">INICIAR SESIÓN</a></h3>
+      </div>
       <div class="footer__social">
         <h3>SOCIAL</h3>
         <div class="footer__social__items">

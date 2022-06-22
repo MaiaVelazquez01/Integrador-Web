@@ -17,10 +17,6 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
-  scroll-margin-top: 60px;
-}
-
 a:link,
 a:visited {
   text-decoration: none;
@@ -48,6 +44,10 @@ header {
 }
 
 @media (min-width: 320px) {
+  section {
+    scroll-margin-top: 60px;
+  }
+
   .menu_toggle,
   .menu__links {
     display: none;
@@ -156,7 +156,7 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    padding-top: 4rem;
+    padding-top: 6rem;
   }
 
   .hero__video {
@@ -165,7 +165,7 @@ header {
     left: 0;
     z-index: -1;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
   }
 
@@ -223,10 +223,10 @@ header {
   .productos__button {
     display: flex;
     justify-content: center;
-    padding-bottom: 1rem;
   }
 
-  .hero__box__down img:active {
+  .hero__box__down img:active,
+  .hero__box__down img:hover {
     width: 70px;
     height: auto;
   }
@@ -287,6 +287,7 @@ header {
     background-color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0px;
   }
 
@@ -323,7 +324,7 @@ header {
   }
 
   .purchase {
-    background-color: black;
+    background-color: var(--naranja);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -343,6 +344,7 @@ header {
     color: black;
     width: 140px;
     height: 170px;
+    border-radius: 10px;
   }
 
   .purchase__box-rappi {
@@ -356,7 +358,7 @@ header {
   }
 
   .newsletter {
-    padding: 0rem 1rem 2rem;
+    padding: 2rem 1rem;
     color: white;
     background-color: black;
     display: flex;
@@ -428,12 +430,20 @@ header {
   .footer__social {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     gap: 10px;
   }
 
-  .footer__menu a {
+  .footer__menu a,
+  .footer_usuario a {
     color: white;
+  }
+
+  .footer_usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .footer__social__items {
@@ -454,5 +464,364 @@ header {
   .footer__social__item:hover {
     border: 1px solid white;
     transition: 0.5s ease-out;
+  }
+}
+
+@media (min-width: 481px) {
+  .menu {
+    height: 80px;
+  }
+
+  .menu__links {
+    top: 80px;
+  }
+
+  .menu__link__usuario__img,
+  .menu_toggle__buttom {
+    width: 55px;
+    height: 50px;
+  }
+
+  section {
+    scroll-margin-top: 80px;
+  }
+
+  .hero__box {
+    padding-top: 10rem;
+  }
+
+  .hero__video {
+    top: 80px;
+  }
+  .hero__box__down img {
+    width: 70px;
+    height: auto;
+  }
+
+  .hero__box__down img:active,
+  .hero__box__down img:hover {
+    width: 80px;
+    height: auto;
+  }
+  .hero__box__text h2,
+  .nosotros__text h2,
+  .productos__text h2,
+  .productos__card__text h4,
+  .newsletter h2,
+  .contacto h2,
+  footer h2 {
+    font-size: xx-large;
+  }
+
+  .hero__box__text h3,
+  .nosotros__text h3,
+  .productos__text h3,
+  .purchase p,
+  .contacto h3,
+  footer h3 {
+    font-size: x-large;
+  }
+
+  .hero__box__text p,
+  .nosotros__text p,
+  .productos__text p,
+  .productos__card__text p,
+  .newsletter p,
+  .contacto p,
+  footer p {
+    font-size: large;
+  }
+
+  .hero__box__text {
+    gap: 50px;
+  }
+
+  .nosotros,
+  .contacto {
+    padding: 4rem 0rem;
+  }
+
+  .nosotros__img,
+  .contacto__img {
+    width: 460px;
+    height: auto;
+  }
+
+  .nosotros__text,
+  .contacto__text {
+    gap: 30px;
+  }
+
+  .productos {
+    gap: 40px;
+  }
+
+  .productos__text {
+    gap: 20px;
+  }
+
+  .productos__cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .productos__card__img {
+    width: 200px;
+    height: 190px;
+  }
+
+  .productos__card__text {
+    width: 200px;
+  }
+
+  #menu {
+    width: 200px;
+    font-size: 25px;
+  }
+
+  .purchase {
+    gap: 15px;
+  }
+  .purchase__box__img {
+    width: 120px;
+    height: auto;
+  }
+
+  .purchase__box-rappi,
+  .purchase__box-wapp {
+    width: 200px;
+    height: 220px;
+  }
+
+  .newsletter {
+    gap: 40px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #newsletter__email {
+    width: 400px;
+    font-size: medium;
+  }
+
+  #newsletter__button {
+    width: 120px;
+    font-size: 25px;
+  }
+
+  .contacto__item__img,
+  .footer__social__item__img {
+    width: 50px;
+    height: 48px;
+  }
+
+  .footer__social__item {
+    width: 50px;
+    height: 50px;
+  }
+
+  footer {
+    gap: 15px;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero__box {
+    gap: 70px;
+  }
+  .hero__box__text {
+    padding-left: 3rem;
+    padding-right: 20rem;
+    gap: 70px;
+  }
+
+  .hero__box__text h2,
+  .nosotros__text h2,
+  .productos__text h2,
+  .newsletter h2,
+  .contacto h2,
+  footer h2 {
+    font-size: xx-large;
+  }
+
+  .hero__box__text h3,
+  .nosotros__text h3,
+  .productos__text h3,
+  .purchase p,
+  .contacto h3,
+  footer h3 {
+    font-size: x-large;
+  }
+
+  .hero__box__down img {
+    width: 90px;
+    height: auto;
+  }
+
+  .hero__box__down img:active,
+  .hero__box__down img:hover {
+    width: 100px;
+    height: auto;
+  }
+
+  .nosotros,
+  .contacto {
+    padding-right: 3rem;
+    flex-direction: row;
+  }
+
+  .nosotros__text,
+  .contacto__text {
+    padding-left: 3rem;
+  }
+
+  .nosotros__img,
+  .contacto__img {
+    width: 300px;
+    height: auto;
+  }
+
+  .productos__cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .productos__card__img {
+    width: 210px;
+    height: 130px;
+  }
+
+  .productos__card__text {
+    width: 210px;
+  }
+
+  .productos__card__text p {
+    font-size: x-large;
+  }
+
+  .productos__card__text h4 {
+    font-size: xx-large;
+  }
+
+  #menu {
+    width: 250px;
+    font-size: 30px;
+  }
+
+  .purchase__box-rappi,
+  .purchase__box-wapp {
+    width: 210px;
+    height: 190px;
+  }
+
+  .purchase__box__img {
+    width: 100px;
+    height: auto;
+  }
+
+  .purchase {
+    gap: 100px;
+  }
+
+  .newsletter {
+    gap: 50px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #newsletter__button {
+    font-size: 25px;
+  }
+
+  #newsletter__email {
+    width: 580px;
+    font-size: larger;
+  }
+
+  footer {
+    flex-direction: row;
+    gap: 40px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hero__box__text {
+    padding-left: 4rem;
+    padding-right: 30rem;
+  }
+
+  .nosotros,
+  .contacto {
+    padding-right: 4rem;
+    padding-top: 4rem;
+  }
+
+  .nosotros {
+    gap: 20px;
+  }
+
+  .contacto__text {
+    padding-left: 10rem;
+  }
+
+  .nosotros__text {
+    padding-left: 4rem;
+  }
+
+  #menu {
+    width: 230px;
+  }
+
+  #purchase-newsletter {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .purchase {
+    flex-direction: column;
+    gap: 25px;
+    padding: 2rem 3rem;
+  }
+
+  .purchase__box__img {
+    width: 115px;
+    height: auto;
+  }
+
+  .purchase__box-rappi {
+    padding-top: 28px;
+    gap: 35px;
+  }
+
+  .purchase__box-rappi,
+  .purchase__box-wapp {
+    width: 250px;
+    height: 230px;
+    border-radius: 20px;
+    padding: 1rem;
+  }
+
+  .newsletter {
+    padding: 7rem 3rem;
+  }
+
+  .nosotros__img,
+  .contacto__img {
+    width: 420px;
+    height: auto;
+  }
+
+  footer {
+    gap: 115px;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
