@@ -101,7 +101,7 @@ header {
   .menu__link,
   .menu__links__usuario {
     padding: 1.8rem 0rem;
-    border-top: white solid 2px;
+    border-top: 2px solid white;
   }
 
   .menu__links__usuario {
@@ -244,8 +244,6 @@ header {
 
   .nosotros__text,
   .contacto__text {
-    /* padding-left: 2rem;
-    padding-right: 2rem; */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -631,6 +629,38 @@ header {
 }
 
 @media (min-width: 769px) {
+  /* .menu {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .menu__link, .menu__links__usuario {
+    width: auto;
+    padding: 20px;
+    border-top: none;
+  }
+
+  .menu_toggle, label, .menu__link__usuario__img {
+    display: none;
+  }
+
+  .menu__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background: black;
+    height: auto;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+  }
+ */
   .hero__box {
     padding-top: 8rem;
     gap: 70px;
@@ -735,8 +765,8 @@ header {
 
   .newsletter {
     gap: 50px;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   #newsletter__button {

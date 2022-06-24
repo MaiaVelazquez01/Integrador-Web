@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald:wght@300&family=Ultra&display=swap");
+
+:root {
+  --verde: #89ac76;
+  --naranja: #ff8d5c;
+  --rosa: #ffa985;
+  --gris: #a3a3a3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--verde);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+span {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) {
+  .log_in, .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .log_in__box h1, .register__box h1 {
+    font-family: "Ultra", "sans-serif";
+    font-size: x-large;
+    font-weight: 300;
+    color: white;
+  }
+
+  .register__box h2 {
+    font-family: "Oswald", "sans-serif";
+    font-size: small;
+    text-align: center;
+  }
+
+  .log_in p, .register p {
+    font-family: "DM Sans", "sans-serif";
+    color: white;
+    text-align: center;
+    font-size: small;
+  }
+
+  .log_in__box__form p, .register__box__form p {
+    color: black;
+    font-size: small;
+  }
+
+  .log_in__box, .register__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 2rem 1rem;
+    gap: 10px;
+    background-color: var(--naranja);
+  }
+
+  .register__box {
+    padding: 12px;
+    width: 270px;
+  }
+
+  .log_in__box__form, .register__box__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .register__box__form {
+    gap: 15px;
+  }
+
+  .log_in__box__form__inputs, .register__box__form__inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .log_in__box__form input, .register__box__form input {
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    border: none;
+  }
+
+  .checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-family: "DM Sans", "sans-serif";
+    color: white;
+    text-align: center;
+    font-size: small;
+  }
+
+  #option {
+    width: 20px;
+    height: 20px;
+  }
+
+  button {
+    background-color: black;
+    color: white;
+    font-family: "Oswald", "sans-serif";
+    font-weight: bolder;
+    width: 80px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px solid black;
+  }
+
+  button:hover {
+    border: 2px solid white;
+    transition: 0.5s ease-out;
+  }
+}
+
+@media (min-width: 481px) {
+  .log_in, .register {
+    gap: 30px;
+  }
+
+  .log_in__box, .register__box {
+    padding: 3rem 2rem;
+    gap: 30px;
+  }
+
+  .register__box {
+    width: 350px;
+  }
+
+  .log_in__box h1, .register__box h1 {
+    font-size: xx-large;
+  }
+
+  .register__box h2 {
+    font-size: medium;
+  }
+
+  .log_in__box__form, .register__box__form {
+    gap: 40px;
+  }
+
+  .log_in__box__form p, .register__box__form p {
+    font-size: smaller;
+  }
+
+  .log_in__box__form input, .register__box__form input {
+    width: 270px;
+  }
+
+  .log_in__box__form__inputs, .register__box__form__inputs {
+    gap: 15px;
+  }
+
+  .checkbox {
+    font-size: smaller;
+  }
+
+  button {
+    font-size: large;
+    width: 110px;
+    padding: 8px;
+  }
+
+  .log_in__down p, .register__down p{
+    font-size: medium;
+  }
+}
+
+@media (min-width: 769px) {
+  .log_in__box h1, .register__box h1 {
+    font-size: xxx-large;
+  }
+
+  .log_in__box {
+    padding: 4rem 3rem;
+    gap: 35px;
+  }
+
+  .register__box {
+    padding: 2rem 3rem;
+    width: 500px;
+    gap: 25px;
+  }
+
+  .register__box__form {
+    gap: 20px;
+  }
+
+  .log_in__box__form__inputs, .register__box__form__inputs {
+    gap: 15px;
+  }
+
+  .log_in__box__form input, .register__box__form input {
+    width: 360px;
+  }
+
+  .log_in__box__form p, .register__box__form p {
+    font-size: larger;
+  }
+
+  .checkbox {
+    font-size: medium;
+    padding-right: 30px;
+  }
+
+  button {
+    font-size: x-large;
+    width: 135px;
+    padding: 10px;
+  }
+
+  .log_in__down p, .register__down p {
+    font-size: x-large;
+  }
+}
