@@ -28,6 +28,7 @@ li {
 
 header {
   position: sticky;
+  z-index: 1;
   top: 0px;
   box-shadow: 1px 5px 20px black;
 }
@@ -86,6 +87,20 @@ header {
     border-radius: 10px;
     background: white;
   }
+
+  /* #menu_toggle:checked ~ span:nth-child(1) {
+    transform: rotate(45deg);
+    margin-top: 18px;
+  }
+  
+  #menu_toggle:checked ~ span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #menu_toggle:checked ~ span:nth-child(3) {
+    transform: rotate(-45deg);
+    margin-top: -20px;
+  } */
 
   .menu__links {
     position: fixed;
@@ -247,6 +262,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 2rem;
   }
 
   .nosotros__img,
@@ -629,38 +645,44 @@ header {
 }
 
 @media (min-width: 769px) {
-  /* .menu {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-  }
-
-  .menu__link, .menu__links__usuario {
-    width: auto;
-    padding: 20px;
-    border-top: none;
-  }
-
-  .menu_toggle, label, .menu__link__usuario__img {
+  label,
+  .menu__link__usuario__img {
     display: none;
   }
 
-  .menu__links {
+  .menu {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    background: black;
-    height: auto;
+    flex-wrap: nowrap;
+    position: relative;
+    z-index: 0;
   }
 
-  nav ul {
+  .menu__links {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
     display: flex;
-    align-items: center;
+    font-size: small;
+    z-index: -1;
+    flex-direction: row;
     justify-content: flex-end;
-    list-style: none;
+    gap: 10px;
   }
- */
+
+  .menu__link,
+  .menu__links__usuario {
+    border: none;
+  }
+
+  .menu__links__usuario {
+    gap: 10px;
+    padding-left: 1rem;
+  }
+
   .hero__box {
     padding-top: 8rem;
     gap: 70px;
@@ -785,6 +807,11 @@ header {
 }
 
 @media (min-width: 1025px) {
+  .menu__links,
+  .menu__links__usuario {
+    font-size: 1rem;
+    gap: 20px;
+  }
   .hero__box {
     padding-top: 5rem;
   }

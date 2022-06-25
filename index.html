@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="style.css" />
     <title>DOC Café, café de especialidad | Cafetería en Villa Crespo</title>
     <link rel="icon" href="assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
 
   <body>
     <header>
       <nav>
         <ul class="menu">
-          <li><a href="#"><h1 class="menu__logo">DOC</h1></a></li>
+          <li>
+            <a href="#"><h1 class="menu__logo">DOC</h1></a>
+          </li>
           <label for="menu_toggle">
             <div class="menu_toggle__buttom">
               <span></span>
@@ -31,13 +37,10 @@
             <li class="menu__link"><a href="#contacto">Contacto</a></li>
             <li class="menu__links__usuario">
               <img src="assets/usuario.jpg" class="menu__link__usuario__img" />
-              <a
-                href="register.html"
-                class="menu__link__usuario"
-                target="_blanck"
+              <a href="register.html" class="menu__link__usuario"
                 >Crear cuenta</a
               >
-              <a href="login.html" class="menu__link__usuario" target="_blanck"
+              <a href="login.html" class="menu__link__usuario"
                 >Iniciar sesión</a
               >
             </li>
@@ -50,16 +53,24 @@
       <section class="hero">
         <div class="hero__box">
           <div class="hero__box__text">
-            <h3>DESDE 1933</h3>
-            <h2>Tostamos nuestro propio café</h2>
-            <p>
+            <h3 class="animate__animated animate__bounceInLeft animate__slow">
+              DESDE 1933
+            </h3>
+            <h2 class="animate__animated animate__bounceInLeft animate__slow">
+              Tostamos nuestro propio café
+            </h2>
+            <p class="animate__animated animate__bounceInLeft animate__slow">
               Lo cuidamos desde la selección de sus granos, hasta la taza,
               conservando el amor y el respeto que tenemos por lo que hacemos,
               desde el primer día.
             </p>
           </div>
           <div class="hero__box__down">
-            <a href="#nosotros"><img src="assets/flecha_down.png" /></a>
+            <a href="#nosotros"
+              ><img
+                class="animate__animated animate__shakeY animate__slower animate__infinite"
+                src="assets/flecha_down.png"
+            /></a>
           </div>
         </div>
         <div class="hero__video">
